@@ -40,3 +40,14 @@ async function showMovies() {
     });
 
 }
+
+searchBtn.addEventListener("click", showMovies)
+
+displayMovies.addEventListener("click", function (e) {
+    if (!imdbIdList.includes(e.target.id)) {
+        imdbIdList.push(e.target.id)
+    }
+
+    localStorage.setItem("myWatchList", JSON.stringify(imdbIdList))
+})
+
