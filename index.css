@@ -1,0 +1,253 @@
+html,
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    background-color: grey;
+}
+
+main {
+    position: relative;
+    width: 550px;
+    height: 780px;
+    border: 1px solid black;
+}
+
+#banner {
+    position: absolute;
+    background-image: url(Images/bannerImg2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 550px;
+    height: 208px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 0;
+}
+
+
+#banner h1 {
+    font-size: 50px;
+    z-index: 1;
+    filter: brightness(100%);
+}
+
+#banner a,
+a:visited {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+#search {
+    z-index: 1;
+    border-radius: 5px;
+    position: absolute;
+    top: 190px;
+    left: 35px;
+    height: 38px;
+    width: 462px;
+}
+
+#search input {
+    text-indent: 35px;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    background-color: #2e2e2f;
+    width: 342px;
+    height: 38px;
+}
+
+#search i {
+    position: absolute;
+    color: whitesmoke;
+    left: 9px;
+    top: 10px;
+}
+
+#search input::placeholder {
+    color: whitesmoke;
+}
+
+#search button {
+    color: whitesmoke;
+    background-color: #4b4b4b;
+    border: none;
+    width: 115px;
+    height: 38px;
+}
+
+#movieListContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212;
+    top: 208px;
+    position: absolute;
+    height: 572px;
+    width: 550px;
+    z-index: 0;
+}
+
+#movieListContainer i {
+    font-size: 70px;
+}
+
+#startExploring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 450px;
+    color: #2e2e2e;
+}
+
+#startExploringWishlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 450px;
+    color: #2e2e2e;
+}
+
+#startExploringWishlist button {
+    height: 30px;
+    width: 250px;
+    color: whitesmoke;
+    background-color: #121212;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#startExploringWishlist button a{
+    text-decoration: none;
+}
+
+#startExploringWishlist i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+#startExploringWishlist p{
+    margin-bottom: 5px;
+}
+
+#movieListContainer p {
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+#displayMovies {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+}
+
+#displayMovies::-webkit-scrollbar {
+    display: none;
+}
+
+#singleMovie {
+    height: 180px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding: 5px;
+}
+
+#moviePoster {
+    margin: 0 15px;
+    height: 150px;
+    width: 100px;
+    border: 0.5px solid #1e1e1e;
+    border: 1px solid white;
+}
+
+#moviePoster img {
+    width: 100%;
+    height: 100%;
+}
+
+#movieDetails {
+    padding-bottom: 30px;
+    margin: 10px;
+    height: 150px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#movieTitle {
+    height: 30px;
+    width: 290px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#movieTitle h4 {
+    margin: 0 0 0 5px;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+#movieTitle p {
+    font-size: 10px;
+    color: whitesmoke;
+    margin-left: 5px;
+}
+
+#genre {
+    height: 25px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+}
+
+#genre p {
+    margin: 0 10px 0 0;
+    color: whitesmoke;
+    font-size: 10px;
+}
+
+#genre button {
+    height: 20px;
+    width: 93px;
+    color: whitesmoke;
+    background-color: #121212;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+#genre button span i {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+#movieDesc {
+    height: 65px;
+    width: 280px;
+}
+
+#movieDesc p {
+    color: #6d6d6d;
+    font-size: 12px;
+}
